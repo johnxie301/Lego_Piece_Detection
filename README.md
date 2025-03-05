@@ -17,13 +17,14 @@ The goal of this project is to build an object detection model to identify and c
 
 The dataset for this project consists of images and corresponding annotations. The annotations needed to be stored in the **YOLO format**, with a `.txt` file for each image, containing class labels and bounding box coordinates. However, the origional annotations provided was stored in **Pascal VOC format** (XML file). Therefore, we will need to do some data processing before training.  
 
-![demo_img](demo_1.jpg 720x480)
+![demo_img](demo_1.jpg =720x480)
 
 
 The dataset is split into a training set and a validation set.
 
 - **Images**: Located in the `datasets/train/images/` and `datasets/val/images/` directories.
 - **Labels**: Located in the `datasets/train/labels/` and `datasets/val/labels/` directories in YOLO format.
+
 ![dataset_example](images/datasets_example.png)
 
 ### Pascal VOC Format
@@ -59,6 +60,7 @@ Steps for converting Pascal VOC format to YOLO:
 - val
 - nc (number of classes)
 - names(names of all the classes)
+
 ![](images/yaml_file_example.png)
 
 ## Model
