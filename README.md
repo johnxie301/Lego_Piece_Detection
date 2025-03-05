@@ -17,7 +17,7 @@ The goal of this project is to build an object detection model to identify and c
 
 The dataset for this project consists of images and corresponding annotations. The annotations needed to be stored in the **YOLO format**, with a `.txt` file for each image, containing class labels and bounding box coordinates. However, the origional annotations provided was stored in **Pascal VOC format** (XML file). Therefore, we will need to do some data processing before training.  
 
-![](images/demo_1.jpg)
+![demo_img](demo_1.jpg)
 
 
 The dataset is split into a training set and a validation set.
@@ -60,6 +60,39 @@ Steps for converting Pascal VOC format to YOLO:
 -nc (number of classes)
 -names(names of all the classes)
 ![](images/yaml_file_example.png)
+
+## Model
+### Option 1: YOLO v11n
+'YOLO (You Only Look Once), a popular object detection and image segmentation model, was developed by Joseph Redmon and Ali Farhadi at the University of Washington. Launched in 2015, YOLO quickly gained popularity for its high speed and accuracy.'(Ultralytics)
+
+'YOLO11 🚀 NEW: Ultralytics' latest YOLO models delivering state-of-the-art (SOTA) performance across multiple tasks, including object detection, segmentation, pose estimation, tracking, and classification, leverage capabilities across diverse AI applications and domains.'(Ultralytics)
+
+Link to the model:https://docs.ultralytics.com/models/yolo11/#performance-metrics
+
+In this project, I am using YOLO's newest model ------ YOLO V11n. N stands for nano. It is the smallest model that designed for real-time detection and edge devices due to its small memory footprint. As the trade off, accuracy will be less compared to other models. 
+
+Our goal is to plant this to the phone and use in real-time, nano will be the best option. That way we don't need to struggle finding that missing piece. 
+
+YOLO model is pretty robust. It does fine-tuning automatically. So changes on the model is not that necessary.
+
+### Option : Self Train Model
+
+
+
+## Results:
+
+### Confusion Matrix:
+
+### F1 Curve:
+
+### P Curve:
+
+### R Curve:
+
+
+
+
+
 
 
 
