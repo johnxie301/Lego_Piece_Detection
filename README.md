@@ -25,7 +25,7 @@ The dataset is split into a training set and a validation set.
 - **Images**: Located in the `datasets/train/images/` and `datasets/val/images/` directories.
 - **Labels**: Located in the `datasets/train/labels/` and `datasets/val/labels/` directories in YOLO format.
 
-<img src="images/datasets_example.png" width="100" height = '200' >
+<img src="images/datasets_example.png" width="130" height = '200' >
 
 
 ### Pascal VOC Format
@@ -62,8 +62,7 @@ Steps for converting Pascal VOC format to YOLO:
 - nc (number of classes)
 - names(names of all the classes)
 
-![](images/yaml_file_example.png)
-<img src="images/yaml_file_example.png" width="510" height = '120' >
+<img src="images/yaml_file_example.png" width="640" height = '150' >
 
 
 ## Model
