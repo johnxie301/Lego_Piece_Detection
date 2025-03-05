@@ -24,7 +24,7 @@ The dataset is split into a training set and a validation set.
 
 - **Images**: Located in the `datasets/train/images/` and `datasets/val/images/` directories.
 - **Labels**: Located in the `datasets/train/labels/` and `datasets/val/labels/` directories in YOLO format.
-![dataset_example](images/datset_example)
+![dataset_example](images/datasets_example.png)
 
 ### Pascal VOC Format
 Pascal VOC annotations are typically stored in XML files, with each XML file containing:
@@ -50,6 +50,19 @@ Steps for converting Pascal VOC format to YOLO:
 - Collect their class IDs, total of 200 classes.
 - Convert the bounding boxes from Pascal VOC format (absolute pixel coordinates) to the YOLO format(center-relative).
 - Create file paths for training, validation and testing.
-- create a .yaml file to record all the path and classes. This will auto-generate two cache files in the label folder.
+
+### 2. Create a .yaml File to Record All the Path and Classes.
+
+5 Variables in it:
+-path
+-train
+-val
+-nc (number of classes)
+-names(names of all the classes)
+![](images/yaml_file_example.png)
+
+
+
+
 
 
