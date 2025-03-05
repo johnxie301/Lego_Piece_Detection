@@ -17,7 +17,7 @@ The goal of this project is to build an object detection model to identify and c
 
 The dataset for this project consists of images and corresponding annotations. The annotations needed to be stored in the **YOLO format**, with a `.txt` file for each image, containing class labels and bounding box coordinates. However, the origional annotations provided was stored in **Pascal VOC format** (XML file). Therefore, we will need to do some data processing before training.  
 
-![demo_img](demo_1.jpg =720x480)
+<img src="demo_1.jpg" width="720" height = '480' >
 
 
 The dataset is split into a training set and a validation set.
