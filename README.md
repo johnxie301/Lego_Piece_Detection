@@ -79,13 +79,19 @@ Our goal is to plant this to the phone and use in real-time, nano will be the be
 
 YOLO model is pretty robust. It does fine-tuning automatically. So changes on the model is not that necessary.
 
-### Option : Self Train Model
+**PS**: If ultralytics reports error on the fine tuning API ray train, it needed to be version before 2.4. However, you can modified the py file from 'ray.train._internal.session_get_session' to 'ray.train._internal.session.get_session'
+
+### Option 2: Self Train Model
 
 
 
 ## Results:
+YOLO: It was bad. Maybe couple hours of training for 5 epochs is not enough for 200 class. Or the dataset is too bad. I would suggest crop the images out instead of using 5-8 MB size images for training since YOLO prefers to train images with size 640x640. Changing it from 640 to 1080 does not seem to do much better job for the result. 
 
 ### Confusion Matrix:
+YOLO:
+
+
 
 ### F1 Curve:
 
