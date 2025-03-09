@@ -81,23 +81,31 @@ YOLO model is pretty robust. It does fine-tuning automatically. So changes on th
 
 **PS**: If ultralytics reports error on the fine tuning API ray train, it needed to be version before 2.4. However, you can modified the py file from 'ray.train._internal.session_get_session' to 'ray.train._internal.session.get_session'
 
-### Option 2: Self Train Model
+### Option 2: Classification using resnet
+As one of the most used pretrained model, resnet does pretty well in image classfications. 
+
+I cropped the images of lego pieces and reorgnized into resnet format. This time using only 20 classes to  
 
 
 
 ## Results:
-YOLO: It was bad. Maybe couple hours of training for 5 epochs is not enough for 200 class. Or the dataset is too bad. I would suggest crop the images out instead of using 5-8 MB size images for training since YOLO prefers to train images with size 640x640. Changing it from 640 to 1080 does not seem to do much better job for the result. 
+### YOLO:
+It was bad. Maybe couple hours of training for 5 epochs is not enough for 200 class. Or the dataset is too bad. I would suggest crop the images out instead of using 5-8 MB size images for training since YOLO prefers to train images with size 640x640. Changing it from 640 to 1080 does not seem to do much better job for the result. 
 
-### Confusion Matrix:
-YOLO:
+#### Confusion Matrix:
+<img src="images/confusion_matrix_normalized.png" width="640" height = '640' >
+
+As we can see on the matrix above, bearly is there any right ones. 200 classes do seem to be too much when each class only contains about 1000 low resolution pieces (each little piece are around 50x50).
+
+#### Visualized results for validation 0:
+Expected:
+<img src="images/val_batch0_labels.png" width="640" height = '150' >
+
+Predicted:
+<img src="images/val_batch0_pred.png" width="640" height = '150' >
 
 
 
-### F1 Curve:
-
-### P Curve:
-
-### R Curve:
 
 
 
