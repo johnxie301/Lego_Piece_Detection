@@ -90,10 +90,10 @@ I cropped the images of lego pieces and reorgnized into resnet format. This time
 
 ## Results:
 ### YOLO:
-It was bad. Maybe couple hours of training for 5 epochs is not enough for 200 class. Or the dataset is too bad. I would suggest crop the images out instead of using 5-8 MB size images for training since YOLO prefers to train images with size 640x640. Changing it from 640 to 1080 does not seem to do much better job for the result. 
+It was bad. Maybe couple hours of training for 10 epochs is not enough for 200 class. Or the dataset is too bad. I would suggest crop the images out instead of using 5-8 MB size images for training since YOLO prefers to train images with size 640x640. Changing it from 640 to 1080 does not seem to do much better job for the result. 
 
 #### Confusion Matrix:
-<img src="images/confusion_matrix_normalized.png" width="640" height = '640' >
+<img src="images/confusion_matrix_normalized.png" width="640" height = '540' >
 
 As we can see on the matrix above, bearly is there any right ones. 200 classes do seem to be too much when each class only contains about 1000 low resolution pieces (each little piece are around 50x50).
 
@@ -103,6 +103,15 @@ Expected:
 
 Predicted:
 <img src="images/val_batch0_pred.jpg" width="640" height = '640' >
+
+Only few of those are detected. It is not as bad for a model that only runs 10 epochs. But far from what we wish to achieve. 
+
+## Future Research
+This data set has enough variety but not enough volume. Some things I can do to make get a better result include but not limited to:
+
+- Increasing data size.
+- Increasing quality of data
+- train with more computation power
 
 
 
