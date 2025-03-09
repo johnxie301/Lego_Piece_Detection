@@ -106,6 +106,10 @@ Predicted:
 
 Only few of those are detected. It is not as bad for a model that only runs 10 epochs. But far from what we wish to achieve. 
 
+### Resnet:
+
+The best test accuracy I get from 10 epochs of training using Ray tune is ~0.45. Not as good but it definitely works better than object detection. 
+
 ## Future Research
 This data set has enough variety but not enough volume. Some things I can do to make get a better result include but not limited to:
 
