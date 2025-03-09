@@ -99,10 +99,10 @@ As we can see on the matrix above, bearly is there any right ones. 200 classes d
 
 #### Visualized results for validation 0:
 Expected:
-<img src="images/val_batch0_labels.png" width="640" height = '150' >
+<img src="images/val_batch0_labels.jpg" width="640" height = '150' >
 
 Predicted:
-<img src="images/val_batch0_pred.png" width="640" height = '150' >
+<img src="images/val_batch0_pred.jpg" width="640" height = '150' >
 
 
 
